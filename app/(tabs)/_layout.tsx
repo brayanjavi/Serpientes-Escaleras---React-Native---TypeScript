@@ -27,7 +27,7 @@ export default function TabLayout() {
 
   return (
     <View style={styles.container}>
-      <Board />
+      <Board players={players} />
       {players.map(player => (
         <Player key={player.name} name={player.name} position={player.position} />
       ))}
